@@ -302,10 +302,15 @@ body {
 }
 .foot-flex {
   display: flex;
+  justify-content: space-between;
 }
 .join-us-color {
   color: var(--text-color-light-primary);
   padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 .join-us {
   margin-left: 70px;
@@ -431,11 +436,9 @@ body {
   height: 581px;
   background-color: var(--bg-color-primary);
   padding-top: 8px;
-  padding-right: 8px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  text-align: right;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
@@ -453,4 +456,176 @@ body {
   background-color: var(--bg-color-primary);
   border-radius: 50%;
   color: #000000;
+  text-align: center;
+}
+input {
+  border: none;
+  outline: none;
+}
+input:hover {
+  outline: none;
+}
+.input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  width: 448px;
+}
+.input:focus-within {
+  border-color: var(--bg-color-light);
+}
+.label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding-left: 40px;
+  margin-bottom: 4px;
+  color: var(--text-color-dark-primary);
+}
+.control-button {
+  text-align: right;
+  padding-right: 8px;
+}
+.control-input {
+  display: block;
+  align-items: left;
+}
+.contact-form {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  padding: 2px 40px 30px 40px;
+  color: var(--text-color-dark-secondary);
+}
+.control-input-svg {
+  margin-right: 15px;
+  fill: var(--text-color-dark-secondary);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.control-input-svg:focus,
+.control-input-svg:hover {
+  fill: var(--text-color-light-secondary);
+}
+.control-textarea {
+  padding: 12px 16px;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.control-textarea:focus {
+  border-color: var(--bg-color-light);
+}
+textarea {
+  resize: none;
+  width: 448px;
+  height: 120px;
+}
+textarea:placeholder-shown {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.input-checkbox {
+  margin-left: 50px;
+  margin-top: 25px;
+  background: var(--text-color-dark-secondary);
+}
+.label-checkbox {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--text-color-dark-primary);
+}
+.link-accept {
+  color: var(--text-color-light-secondary);
+  text-decoration-line: underline;
+}
+.modal-button {
+  background-color: var(--bg-color-light);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--text-color-light-primary);
+  border-style: hidden;
+  cursor: pointer;
+  margin: 30px 164px 40px 164px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 76px;
+}
+.newsletter-button {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light-primary);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: hidden;
+  cursor: pointer;
+  padding: 10px 24px 10px 42px;
+  width: 200px;
+  height: 50px;
+  justify-content: space-between;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.news-save {
+  margin-left: 78px;
+  padding-top: 12px;
+}
+.news-save-color {
+  color: var(--text-color-light-primary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.newsletter-input {
+  width: 358px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--bg-color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  outline: none;
+  margin-right: 12px;
+}
+.newsletter-contact {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+}
+.newsletter-button-svg {
+  margin-left: 24px;
+  display: inline-flex;
+  align-items: center;
+  fill: var(--bg-color-primary);
+}
+.newsletter-button-style {
+  display: flex;
 }
