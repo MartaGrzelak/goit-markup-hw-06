@@ -474,11 +474,6 @@ body {
 }
 .control-input {
   display: block;
-  align-items: left;
-}
-.control-input {
-  display: block;
-  align-items: left;
   margin-left: 40px;
   position: relative;
 }
@@ -515,7 +510,6 @@ input:focus-within {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
   color: var(--text-color-dark-primary);
 }
 .input-name {
@@ -581,14 +575,12 @@ textarea:placeholder-shown {
 }
 .input-checkbox {
   margin-right: 7px;
-  margin-top: 25px;
-  margin-left: 14px;
-  background: var(--text-color-dark-secondary);
+  background-color: var(--text-color-dark-secondary);
 }
 .label-checkbox {
   position: absolute;
   top: 366.68px;
-  left: 37px;
+  left: 15px;
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-color-dark-primary);
